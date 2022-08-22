@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  @apply font-body;
+}
+
+label {
+  @apply mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300 !important;
+}
+
+.field-description {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+input, select {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mt-2 mb-4 !important;
+}
+
+.btn.btn-primary, button[type="submit"] {
+  @apply text-white bg-n3blue border border-transparent hover:bg-sky-500 disabled:hover:bg-sky-300 transition font-medium rounded-lg text-sm px-5 py-2.5 mr-2 w-full !important;
+}
+
+.card {
+  @apply bg-white rounded-lg border border-gray-200 shadow-md;
+}
+
+.badge.badge-primary {
+  @apply bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 !important;
+}
+
+.badge.badge-green {
+  @apply bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-900 !important;
+}
+
+.field {
+  @apply mb-1;
+}
+
+.form-group legend {
+  @apply text-sm mt-4;
+}
+
+.array-item {
+  @apply flex flex-row gap-2 items-start;
+}
+
+.array-item-list .col-xs-3 {
+  @apply mt-2;
+}
+
+.array-item .col-xs-9, .array-item .col-xs-12 {
+  @apply flex-1;
+}
+
+.btn-group {
+  @apply h-11;
+}
+
+.array-item .btn-group {
+  @apply gap-2;
+}
+
+button.btn-add {
+  @apply float-right !important;
+  @apply w-11 h-11 text-white text-center text-lime-500 border border-lime-500 hover:bg-lime-500 hover:text-white rounded-full px-3;
+}
+
+button.array-item-remove {
+  @apply flex-none !important;
+  @apply w-11 h-11 text-white text-center text-red-500 border border-red-500 hover:bg-red-500 hover:text-white rounded-full px-2;
+}
+
+button.array-item-move-up, button.array-item-move-down {
+  @apply py-2 px-4 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700;
+}
+
+button.array-item-move-up {
+  @apply rounded-l-lg;
+}
+
+button.array-item-move-down {
+  @apply -ml-2;
+  @apply rounded-r-lg;
+}
+
+button.array-item-move-up, button.array-item-move-down {
+  @apply flex-none w-12;
+}
+
+i.glyphicon.glyphicon-plus {
+  @apply text-center align-middle;
+}
+
+i.glyphicon {
+  @apply not-italic text-xl;
+}
+
+i.glyphicon.glyphicon-plus:before {
+  content: "+";
+}
+
+i.glyphicon.glyphicon-remove:before {
+  content: "-";
+}
+
+i.glyphicon.glyphicon-arrow-up:before {
+  content: "↑";
+}
+
+i.glyphicon.glyphicon-arrow-down:before {
+  content: "↓";
+}
+
+label {
+  @apply flex flex-row align-middle gap-2;
+}
+
+label.control-label {
+  @apply text-lg font-bold;
+}
+
+.hidden {
+  @apply invisible w-0 h-0;
+}
+
+.form-group {
+  @apply mb-2;
+}
